@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:id="@+id/infoBar1"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:text="id:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <EditText
+                android:id="@+id/idEt"
+                android:text="hdr"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:text="身高:"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <EditText
+                android:id="@+id/heightEt"
+                android:inputType="number"
+                android:maxLength="3"
+                android:text="170"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:text="cm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:text="性别"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <RadioGroup
+                android:id="@+id/sexRG"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <RadioButton
+                    android:text="男"
+                    android:id="@+id/sexMan"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <RadioButton
+                    android:id="@+id/sexWoman"
+                    android:text="女"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/infoBar2"
+            android:layout_below="@id/infoBar1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/birthdayTv"
+                android:text="生日"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <EditText
+                android:id="@+id/birthdayEt"
+                android:hint="YYYY-M-d"
+                android:text="1990-1-1"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:id="@+id/scanBtn"
+                android:text="开始扫描"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_below="@id/infoBar2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+</RelativeLayout>

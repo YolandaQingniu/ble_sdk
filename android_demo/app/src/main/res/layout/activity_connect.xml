@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:id="@+id/deviceLy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+        <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/macTv"
+                android:layout_gravity="end|center_vertical"
+                android:layout_width="120dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:id="@+id/connectBtn"
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/weightTv"
+            android:layout_below="@id/deviceLy"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/modelTv"
+            android:layout_below="@id/deviceLy"
+            android:layout_toEndOf="@+id/weightTv"
+            android:layout_alignBottom="@+id/weightTv"
+            android:layout_marginStart="50dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/statusTv"
+            android:layout_below="@id/deviceLy"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/reportRv"
+            android:layout_below="@id/weightTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+</RelativeLayout>
