@@ -1,9 +1,10 @@
 # 蓝牙SDK，适用于伊欧乐公司下绝大部分的智能秤
 
-## 版本
-1. `2.2`解决某些情况下，安卓可能显示指标不完整的bug，提高appid的校验成功率
-* `2.1` 增加了几款新型号，提高识别轻牛设备的成功率
-* `2.0` 增加了蓝牙扫描所返回的设备的型号名称
+## 最新版本
+`2.2` 解决某些情况下，安卓可能显示指标不完整的bug，提高appid的校验成功率 
+[下载地址](../../releases/download/2.0/qn-ble-sdk-2.0.zip)
+
+[所有版本](../../releases)
 
 ## Demo
 
@@ -323,5 +324,4 @@ typedef NS_ENUM(NSInteger,QingNiuDeviceDisconnectState) {//断开连接的各种
 * SDK中有方法可以指定测试或发布模式
 
 =======================
-如有问题，请mail: huangdunren@yolanda.hk   huangwenhai@yolanda.hk
-或者直接在QQ，微信的SDK技术讨论组中咨询
+如有问题，请 email: huangdunren@yolanda.hk 或者直接在QQ，微信的SDK技术讨论组中咨询
